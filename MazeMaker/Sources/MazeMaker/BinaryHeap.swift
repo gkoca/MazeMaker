@@ -37,10 +37,14 @@ open class BinaryHeap<U> {
     }
     
     open func peek() -> U? {
-        return list[0]
+        return list.first
     }
     
     open func delete() -> U? {
+        if list.isEmpty {
+            return nil
+        }
+        
         let value = list[0]
         let least = list.popLast()
         
@@ -54,52 +58,45 @@ open class BinaryHeap<U> {
     
     open func deleteElement(_ element: U) -> U? {
         if let index = searchSubtree(0, forElement: element) {
-            deleteAt(index)
+            if index < list.count - 1 {
+                list[index] = list[list.count - 1]
+                list.removeLast()
+                heapifyFrom(index)
+            } else {
+                list.removeLast()
+            }
             return element
         }
-        
         return nil
-    }
-    
-    fileprivate func deleteAt(_ index: Int) {
-        if index > 0 {
-            let tmp = list[0]
-            list[0] = list[index]
-            list[index] = list[list.count-1]
-            list[list.count-1] = tmp
-        }
-        
-        delete()
     }
     
     fileprivate func searchSubtree(_ root: Int, forElement element: U) -> Int? {
-        let left = root * 2 + 1
-        let right = root * 2 + 2
+        // Base case: out of bounds
+        if root >= list.count {
+            return nil
+        }
         
+        // Check if current node matches
         switch compare(element, list[root]) {
-        case .higher:
-            return nil // no match
-            
         case .equal:
             return root
             
+        case .higher:
+            return nil // No match in this subtree
+            
         case .lower:
-            let leftWise = (left < list.count) ? compare(element, list[left]) : .higher
-            if leftWise != .higher {
-                if let result = searchSubtree(left, forElement: element) {
-                    return result
-                }
+            // Search left subtree
+            if let leftResult = searchSubtree(root * 2 + 1, forElement: element) {
+                return leftResult
             }
             
-            let rightWise = (right < list.count) ? compare(element, list[right]) : .higher
-            if rightWise != .higher {
-                if let result = searchSubtree(right, forElement: element) {
-                    return result
-                }
+            // Search right subtree
+            if let rightResult = searchSubtree(root * 2 + 2, forElement: element) {
+                return rightResult
             }
+            
+            return nil
         }
-        
-        return nil
     }
     
     fileprivate func reheapify() {

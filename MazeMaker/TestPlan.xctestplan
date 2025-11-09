@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "BB3B4FD7-7E82-4654-BF3D-B5CD67AB8F98",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "MazeMakerTests",
+        "name" : "MazeMakerTests"
+      }
+    }
+  ],
+  "version" : 1
+}
