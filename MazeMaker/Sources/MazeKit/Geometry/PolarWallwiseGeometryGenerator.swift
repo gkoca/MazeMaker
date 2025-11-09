@@ -1,3 +1,5 @@
+import UIKit
+
 open class PolarWallwiseGeometryGenerator : GeometryGenerator {
   let grid: Grid
   let layout: PolarLayout

@@ -1,3 +1,5 @@
+import CoreGraphics
+
 public protocol GeometryGenerator {
   var bounds: CGRect { get }
 

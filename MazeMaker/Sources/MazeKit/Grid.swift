@@ -1,3 +1,5 @@
+import Foundation
+
 open class Grid {
   open fileprivate(set) var cells: Set<Cell> = Set<Cell>()
   fileprivate var slots: [Location : Cell] = [:]

@@ -1,5 +1,5 @@
 import XCTest
-@testable import MazeMaker
+@testable import MazeKit
 
 class GridTests: XCTestCase {
   class TestLayout: Layout {

@@ -1,10 +1,12 @@
-open class OrthoWallwiseGeometryGenerator : GeometryGenerator {
+import UIKit
+
+open class OrthoLinewiseGeometryGenerator : GeometryGenerator {
   let grid: Grid
   let layout: OrthogonalLayout
   let scale: CGFloat
   let margin: CGFloat
 
-    public let bounds: CGRect
+  public let bounds: CGRect
 
   public required init(grid: Grid, scale: CGFloat, margin: CGFloat) {
     self.grid = grid
@@ -12,8 +14,8 @@ open class OrthoWallwiseGeometryGenerator : GeometryGenerator {
     self.layout = grid.layout as! OrthogonalLayout
     self.margin = margin
     self.bounds = CGRect(x: 0, y: 0,
-      width: CGFloat(layout.columns) * scale + margin*2,
-      height: CGFloat(layout.rows) * scale + margin*2)
+      width: CGFloat(layout.columns - 1) * scale + margin*2,
+      height: CGFloat(layout.rows - 1) * scale + margin*2)
   }
 
   open func render(_ ctx: CGContext) {
@@ -33,24 +35,14 @@ open class OrthoWallwiseGeometryGenerator : GeometryGenerator {
         let x2 = CGFloat(cell.gridLocation.column+1) * scale + margin
         let y2 = CGFloat(cell.gridLocation.row+1) * scale + margin
 
-        if cell.north == nil {
-          ctx.move(to: CGPoint(x: x, y: y))
-          ctx.addLine(to: CGPoint(x: x2, y: y))
-        }
-
-        if cell.west == nil {
+        if cell.isLinkedWith(cell.south) {
           ctx.move(to: CGPoint(x: x, y: y))
           ctx.addLine(to: CGPoint(x: x, y: y2))
         }
 
-        if !cell.isLinkedWith(cell.south) {
-          ctx.move(to: CGPoint(x: x, y: y2))
-          ctx.addLine(to: CGPoint(x: x2, y: y2))
-        }
-
-        if !cell.isLinkedWith(cell.east) {
-          ctx.move(to: CGPoint(x: x2, y: y))
-          ctx.addLine(to: CGPoint(x: x2, y: y2))
+        if cell.isLinkedWith(cell.east) {
+          ctx.move(to: CGPoint(x: x, y: y))
+          ctx.addLine(to: CGPoint(x: x2, y: y))
         }
       }
     }
