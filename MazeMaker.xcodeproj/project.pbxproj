@@ -3,41 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C533C2E1C55A28D003F4342 /* GeometryGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C533C2D1C55A28D003F4342 /* GeometryGenerator.swift */; };
-		1C533C301C55A33F003F4342 /* OrthoLinewiseGeometryGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C533C2F1C55A33F003F4342 /* OrthoLinewiseGeometryGenerator.swift */; };
-		1C533C321C55B6A1003F4342 /* OrthoWallwiseGeometryGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C533C311C55B6A1003F4342 /* OrthoWallwiseGeometryGenerator.swift */; };
-		1C533C361C55BE03003F4342 /* PolarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C533C351C55BE03003F4342 /* PolarCell.swift */; };
-		1C533C381C55BE9B003F4342 /* PolarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C533C371C55BE9B003F4342 /* PolarLayout.swift */; };
-		1C533C3A1C55C1B1003F4342 /* PolarLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C533C391C55C1B1003F4342 /* PolarLocation.swift */; };
-		1C533C3C1C55C528003F4342 /* PolarWallwiseGeometryGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C533C3B1C55C528003F4342 /* PolarWallwiseGeometryGenerator.swift */; };
-		1C5587CD1C553F2B00F34283 /* MazeCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5587CC1C553F2B00F34283 /* MazeCanvas.swift */; };
-		1C6F2D201C6FEC5900F9C7A4 /* Distances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6F2D1F1C6FEC5900F9C7A4 /* Distances.swift */; };
-		1C6F2D221C6FF22200F9C7A4 /* BinaryHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6F2D211C6FF22200F9C7A4 /* BinaryHeap.swift */; };
 		1C71B1C81C700892009F20FD /* MazeMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF119331C4C74C800287CAC /* MazeMaker.framework */; };
-		1C8DB0ED1C4D5EA300509419 /* Algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DB0EC1C4D5EA300509419 /* Algorithm.swift */; };
-		1C9892201C4DD3AC009D2310 /* AldousBroder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C98921F1C4DD3AC009D2310 /* AldousBroder.swift */; };
-		1CCBF09A1C509C100052E1A0 /* RecursiveBacktracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCBF0991C509C100052E1A0 /* RecursiveBacktracker.swift */; };
-		1CCBF09C1C509E6B0052E1A0 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCBF09B1C509E6B0052E1A0 /* Set.swift */; };
-		1CCBF09E1C509F770052E1A0 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCBF09D1C509F770052E1A0 /* Array.swift */; };
-		1CD4ABD91C70317100A47B98 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD4ABD81C70317100A47B98 /* PriorityQueue.swift */; };
 		1CF04B881C4D33120088B31F /* GridLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF04B871C4D33120088B31F /* GridLocationTests.swift */; };
 		1CF04B8A1C4D34D10088B31F /* CellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF04B891C4D34D10088B31F /* CellTests.swift */; };
 		1CF04B8C1C4D43E50088B31F /* OrthogonalCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF04B8B1C4D43E50088B31F /* OrthogonalCellTests.swift */; };
 		1CF04B8E1C4D48390088B31F /* GridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF04B8D1C4D48390088B31F /* GridTests.swift */; };
 		1CF04B901C4D48A10088B31F /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF04B8F1C4D48A10088B31F /* TestCell.swift */; };
 		1CF04B921C4D4A4D0088B31F /* OrthogonalLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF04B911C4D4A4D0088B31F /* OrthogonalLayoutTests.swift */; };
-		1CF04B941C4D4B410088B31F /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF04B931C4D4B410088B31F /* Layout.swift */; };
-		1CF119371C4C74C800287CAC /* MazeMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF119361C4C74C800287CAC /* MazeMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1CF1194E1C4C762000287CAC /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1194D1C4C762000287CAC /* Location.swift */; };
-		1CF119501C4C765C00287CAC /* GridLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1194F1C4C765C00287CAC /* GridLocation.swift */; };
-		1CF119521C4C768D00287CAC /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF119511C4C768D00287CAC /* Cell.swift */; };
-		1CF119541C4C80F400287CAC /* OrthogonalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF119531C4C80F400287CAC /* OrthogonalCell.swift */; };
-		1CF1195A1C4C872600287CAC /* OrthogonalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF119591C4C872600287CAC /* OrthogonalLayout.swift */; };
-		1CF1195C1C4C898500287CAC /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1195B1C4C898500287CAC /* Grid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,43 +28,35 @@
 
 /* Begin PBXFileReference section */
 		17AE0D881E9A5A7D00173E34 /* Maze Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Maze Playground.playground"; sourceTree = "<group>"; };
-		1C533C2D1C55A28D003F4342 /* GeometryGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeometryGenerator.swift; sourceTree = "<group>"; };
-		1C533C2F1C55A33F003F4342 /* OrthoLinewiseGeometryGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrthoLinewiseGeometryGenerator.swift; sourceTree = "<group>"; };
-		1C533C311C55B6A1003F4342 /* OrthoWallwiseGeometryGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrthoWallwiseGeometryGenerator.swift; sourceTree = "<group>"; };
-		1C533C351C55BE03003F4342 /* PolarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolarCell.swift; sourceTree = "<group>"; };
-		1C533C371C55BE9B003F4342 /* PolarLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolarLayout.swift; sourceTree = "<group>"; };
-		1C533C391C55C1B1003F4342 /* PolarLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolarLocation.swift; sourceTree = "<group>"; };
-		1C533C3B1C55C528003F4342 /* PolarWallwiseGeometryGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolarWallwiseGeometryGenerator.swift; sourceTree = "<group>"; };
-		1C5587CC1C553F2B00F34283 /* MazeCanvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MazeCanvas.swift; sourceTree = "<group>"; };
-		1C6F2D1F1C6FEC5900F9C7A4 /* Distances.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distances.swift; sourceTree = "<group>"; };
-		1C6F2D211C6FF22200F9C7A4 /* BinaryHeap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryHeap.swift; sourceTree = "<group>"; };
-		1C8DB0EC1C4D5EA300509419 /* Algorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Algorithm.swift; sourceTree = "<group>"; };
 		1C8DB0EE1C4D93DC00509419 /* Maze Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Maze Playground.playground"; sourceTree = SOURCE_ROOT; };
-		1C98921F1C4DD3AC009D2310 /* AldousBroder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AldousBroder.swift; sourceTree = "<group>"; };
 		1CAA32041C53EEB5007507E1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		1CCBF0991C509C100052E1A0 /* RecursiveBacktracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecursiveBacktracker.swift; sourceTree = "<group>"; };
-		1CCBF09B1C509E6B0052E1A0 /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
-		1CCBF09D1C509F770052E1A0 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
-		1CD4ABD81C70317100A47B98 /* PriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
 		1CF04B871C4D33120088B31F /* GridLocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLocationTests.swift; sourceTree = "<group>"; };
 		1CF04B891C4D34D10088B31F /* CellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTests.swift; sourceTree = "<group>"; };
 		1CF04B8B1C4D43E50088B31F /* OrthogonalCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrthogonalCellTests.swift; sourceTree = "<group>"; };
 		1CF04B8D1C4D48390088B31F /* GridTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridTests.swift; sourceTree = "<group>"; };
 		1CF04B8F1C4D48A10088B31F /* TestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
 		1CF04B911C4D4A4D0088B31F /* OrthogonalLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrthogonalLayoutTests.swift; sourceTree = "<group>"; };
-		1CF04B931C4D4B410088B31F /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 		1CF119331C4C74C800287CAC /* MazeMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MazeMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CF119361C4C74C800287CAC /* MazeMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MazeMaker.h; sourceTree = "<group>"; };
-		1CF119381C4C74C800287CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CF1193D1C4C74C800287CAC /* MazeMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MazeMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF119441C4C74C800287CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1CF1194D1C4C762000287CAC /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		1CF1194F1C4C765C00287CAC /* GridLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLocation.swift; sourceTree = "<group>"; };
-		1CF119511C4C768D00287CAC /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
-		1CF119531C4C80F400287CAC /* OrthogonalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrthogonalCell.swift; sourceTree = "<group>"; };
-		1CF119591C4C872600287CAC /* OrthogonalLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrthogonalLayout.swift; sourceTree = "<group>"; };
-		1CF1195B1C4C898500287CAC /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7E21D2772EC0D39C0032965D /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			publicHeaders = (
+				MazeMaker.h,
+			);
+			target = 1CF119321C4C74C800287CAC /* MazeMaker */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7E21D25D2EC0D39C0032965D /* MazeMaker */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (7E21D2772EC0D39C0032965D /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = MazeMaker; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1CF1192F1C4C74C800287CAC /* Frameworks */ = {
@@ -109,51 +77,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C533C331C55B846003F4342 /* Geometry */ = {
-			isa = PBXGroup;
-			children = (
-				1C533C2D1C55A28D003F4342 /* GeometryGenerator.swift */,
-				1C533C2F1C55A33F003F4342 /* OrthoLinewiseGeometryGenerator.swift */,
-				1C533C311C55B6A1003F4342 /* OrthoWallwiseGeometryGenerator.swift */,
-				1C533C3B1C55C528003F4342 /* PolarWallwiseGeometryGenerator.swift */,
-			);
-			name = Geometry;
-			sourceTree = "<group>";
-		};
-		1C533C341C55B859003F4342 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				1C5587CC1C553F2B00F34283 /* MazeCanvas.swift */,
-			);
-			name = UI;
-			sourceTree = "<group>";
-		};
-		1CAA32021C53EE58007507E1 /* Algorithms */ = {
-			isa = PBXGroup;
-			children = (
-				1C8DB0EC1C4D5EA300509419 /* Algorithm.swift */,
-				1C98921F1C4DD3AC009D2310 /* AldousBroder.swift */,
-				1CCBF0991C509C100052E1A0 /* RecursiveBacktracker.swift */,
-			);
-			name = Algorithms;
-			sourceTree = "<group>";
-		};
-		1CAA32031C53EE67007507E1 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				1CCBF09B1C509E6B0052E1A0 /* Set.swift */,
-				1CCBF09D1C509F770052E1A0 /* Array.swift */,
-			);
-			name = Extensions;
-			sourceTree = "<group>";
-		};
 		1CF119291C4C74C800287CAC = {
 			isa = PBXGroup;
 			children = (
 				17AE0D881E9A5A7D00173E34 /* Maze Playground.playground */,
 				1CAA32041C53EEB5007507E1 /* README.md */,
 				1C8DB0EE1C4D93DC00509419 /* Maze Playground.playground */,
-				1CF119351C4C74C800287CAC /* MazeMaker */,
+				7E21D25D2EC0D39C0032965D /* MazeMaker */,
 				1CF119411C4C74C800287CAC /* MazeMakerTests */,
 				1CF119341C4C74C800287CAC /* Products */,
 			);
@@ -166,32 +96,6 @@
 				1CF1193D1C4C74C800287CAC /* MazeMakerTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		1CF119351C4C74C800287CAC /* MazeMaker */ = {
-			isa = PBXGroup;
-			children = (
-				1C533C341C55B859003F4342 /* UI */,
-				1C533C331C55B846003F4342 /* Geometry */,
-				1CAA32031C53EE67007507E1 /* Extensions */,
-				1CAA32021C53EE58007507E1 /* Algorithms */,
-				1CF119361C4C74C800287CAC /* MazeMaker.h */,
-				1CF119381C4C74C800287CAC /* Info.plist */,
-				1CF1194D1C4C762000287CAC /* Location.swift */,
-				1CF1194F1C4C765C00287CAC /* GridLocation.swift */,
-				1C533C391C55C1B1003F4342 /* PolarLocation.swift */,
-				1CF119511C4C768D00287CAC /* Cell.swift */,
-				1CF119531C4C80F400287CAC /* OrthogonalCell.swift */,
-				1CF04B931C4D4B410088B31F /* Layout.swift */,
-				1CF119591C4C872600287CAC /* OrthogonalLayout.swift */,
-				1CF1195B1C4C898500287CAC /* Grid.swift */,
-				1C6F2D1F1C6FEC5900F9C7A4 /* Distances.swift */,
-				1C6F2D211C6FF22200F9C7A4 /* BinaryHeap.swift */,
-				1CD4ABD81C70317100A47B98 /* PriorityQueue.swift */,
-				1C533C351C55BE03003F4342 /* PolarCell.swift */,
-				1C533C371C55BE9B003F4342 /* PolarLayout.swift */,
-			);
-			path = MazeMaker;
 			sourceTree = "<group>";
 		};
 		1CF119411C4C74C800287CAC /* MazeMakerTests */ = {
@@ -215,7 +119,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CF119371C4C74C800287CAC /* MazeMaker.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +137,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7E21D25D2EC0D39C0032965D /* MazeMaker */,
 			);
 			name = MazeMaker;
 			productName = MazeMaker;
@@ -320,29 +226,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C533C3C1C55C528003F4342 /* PolarWallwiseGeometryGenerator.swift in Sources */,
-				1CD4ABD91C70317100A47B98 /* PriorityQueue.swift in Sources */,
-				1CF119541C4C80F400287CAC /* OrthogonalCell.swift in Sources */,
-				1C6F2D221C6FF22200F9C7A4 /* BinaryHeap.swift in Sources */,
-				1C9892201C4DD3AC009D2310 /* AldousBroder.swift in Sources */,
-				1C8DB0ED1C4D5EA300509419 /* Algorithm.swift in Sources */,
-				1CF119501C4C765C00287CAC /* GridLocation.swift in Sources */,
-				1C533C381C55BE9B003F4342 /* PolarLayout.swift in Sources */,
-				1CF1194E1C4C762000287CAC /* Location.swift in Sources */,
-				1C5587CD1C553F2B00F34283 /* MazeCanvas.swift in Sources */,
-				1C533C2E1C55A28D003F4342 /* GeometryGenerator.swift in Sources */,
-				1C533C3A1C55C1B1003F4342 /* PolarLocation.swift in Sources */,
-				1C533C361C55BE03003F4342 /* PolarCell.swift in Sources */,
-				1CF1195A1C4C872600287CAC /* OrthogonalLayout.swift in Sources */,
-				1C533C321C55B6A1003F4342 /* OrthoWallwiseGeometryGenerator.swift in Sources */,
-				1CCBF09A1C509C100052E1A0 /* RecursiveBacktracker.swift in Sources */,
-				1CF04B941C4D4B410088B31F /* Layout.swift in Sources */,
-				1CF119521C4C768D00287CAC /* Cell.swift in Sources */,
-				1CCBF09E1C509F770052E1A0 /* Array.swift in Sources */,
-				1CCBF09C1C509E6B0052E1A0 /* Set.swift in Sources */,
-				1C533C301C55A33F003F4342 /* OrthoLinewiseGeometryGenerator.swift in Sources */,
-				1C6F2D201C6FEC5900F9C7A4 /* Distances.swift in Sources */,
-				1CF1195C1C4C898500287CAC /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,7 +340,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -479,7 +363,11 @@
 				INFOPLIST_FILE = MazeMaker/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.jamisbuck.MazeMaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -501,7 +389,11 @@
 				INFOPLIST_FILE = MazeMaker/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.jamisbuck.MazeMaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -513,7 +405,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = MazeMakerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.jamisbuck.MazeMakerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -524,7 +420,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = MazeMakerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.jamisbuck.MazeMakerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
