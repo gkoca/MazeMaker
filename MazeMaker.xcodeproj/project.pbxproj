@@ -8,12 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1C71B1C81C700892009F20FD /* MazeMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF119331C4C74C800287CAC /* MazeMaker.framework */; };
-		1CF04B881C4D33120088B31F /* GridLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF04B871C4D33120088B31F /* GridLocationTests.swift */; };
-		1CF04B8A1C4D34D10088B31F /* CellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF04B891C4D34D10088B31F /* CellTests.swift */; };
-		1CF04B8C1C4D43E50088B31F /* OrthogonalCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF04B8B1C4D43E50088B31F /* OrthogonalCellTests.swift */; };
-		1CF04B8E1C4D48390088B31F /* GridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF04B8D1C4D48390088B31F /* GridTests.swift */; };
-		1CF04B901C4D48A10088B31F /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF04B8F1C4D48A10088B31F /* TestCell.swift */; };
-		1CF04B921C4D4A4D0088B31F /* OrthogonalLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF04B911C4D4A4D0088B31F /* OrthogonalLayoutTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,18 +21,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		17AE0D881E9A5A7D00173E34 /* Maze Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Maze Playground.playground"; sourceTree = "<group>"; };
-		1C8DB0EE1C4D93DC00509419 /* Maze Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Maze Playground.playground"; sourceTree = SOURCE_ROOT; };
 		1CAA32041C53EEB5007507E1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		1CF04B871C4D33120088B31F /* GridLocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLocationTests.swift; sourceTree = "<group>"; };
-		1CF04B891C4D34D10088B31F /* CellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTests.swift; sourceTree = "<group>"; };
-		1CF04B8B1C4D43E50088B31F /* OrthogonalCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrthogonalCellTests.swift; sourceTree = "<group>"; };
-		1CF04B8D1C4D48390088B31F /* GridTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridTests.swift; sourceTree = "<group>"; };
-		1CF04B8F1C4D48A10088B31F /* TestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
-		1CF04B911C4D4A4D0088B31F /* OrthogonalLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrthogonalLayoutTests.swift; sourceTree = "<group>"; };
 		1CF119331C4C74C800287CAC /* MazeMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MazeMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF1193D1C4C74C800287CAC /* MazeMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MazeMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CF119441C4C74C800287CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E3956BB2EC0D467005F16A1 /* MazeMaker.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MazeMaker.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -52,10 +38,18 @@
 			);
 			target = 1CF119321C4C74C800287CAC /* MazeMaker */;
 		};
+		7E3956CB2EC0D501005F16A1 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1CF1193C1C4C74C800287CAC /* MazeMakerTests */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7E21D25D2EC0D39C0032965D /* MazeMaker */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (7E21D2772EC0D39C0032965D /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = MazeMaker; sourceTree = "<group>"; };
+		7E3956C32EC0D501005F16A1 /* MazeMakerTests */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (7E3956CB2EC0D501005F16A1 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = MazeMakerTests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +74,10 @@
 		1CF119291C4C74C800287CAC = {
 			isa = PBXGroup;
 			children = (
-				17AE0D881E9A5A7D00173E34 /* Maze Playground.playground */,
+				7E3956BB2EC0D467005F16A1 /* MazeMaker.playground */,
 				1CAA32041C53EEB5007507E1 /* README.md */,
-				1C8DB0EE1C4D93DC00509419 /* Maze Playground.playground */,
 				7E21D25D2EC0D39C0032965D /* MazeMaker */,
-				1CF119411C4C74C800287CAC /* MazeMakerTests */,
+				7E3956C32EC0D501005F16A1 /* MazeMakerTests */,
 				1CF119341C4C74C800287CAC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,20 +89,6 @@
 				1CF1193D1C4C74C800287CAC /* MazeMakerTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		1CF119411C4C74C800287CAC /* MazeMakerTests */ = {
-			isa = PBXGroup;
-			children = (
-				1CF04B871C4D33120088B31F /* GridLocationTests.swift */,
-				1CF04B891C4D34D10088B31F /* CellTests.swift */,
-				1CF119441C4C74C800287CAC /* Info.plist */,
-				1CF04B8B1C4D43E50088B31F /* OrthogonalCellTests.swift */,
-				1CF04B8D1C4D48390088B31F /* GridTests.swift */,
-				1CF04B8F1C4D48A10088B31F /* TestCell.swift */,
-				1CF04B911C4D4A4D0088B31F /* OrthogonalLayoutTests.swift */,
-			);
-			path = MazeMakerTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +137,9 @@
 			);
 			dependencies = (
 				1CF119401C4C74C800287CAC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7E3956C32EC0D501005F16A1 /* MazeMakerTests */,
 			);
 			name = MazeMakerTests;
 			productName = MazeMakerTests;
@@ -233,12 +215,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CF04B921C4D4A4D0088B31F /* OrthogonalLayoutTests.swift in Sources */,
-				1CF04B881C4D33120088B31F /* GridLocationTests.swift in Sources */,
-				1CF04B8C1C4D43E50088B31F /* OrthogonalCellTests.swift in Sources */,
-				1CF04B901C4D48A10088B31F /* TestCell.swift in Sources */,
-				1CF04B8A1C4D34D10088B31F /* CellTests.swift in Sources */,
-				1CF04B8E1C4D48390088B31F /* GridTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

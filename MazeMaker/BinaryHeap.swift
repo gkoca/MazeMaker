@@ -31,7 +31,7 @@ open class BinaryHeap<U> {
     }
   }
 
-  open func buildHeap<S: Collection where S.Iterator.Element == U>(_ list: S) {
+    open func buildHeap<S: Collection>(_ list: S) where S.Iterator.Element == U {
     self.list = Array(list)
     reheapify()
   }

@@ -1,5 +1,5 @@
 open class Distances {
-  open let root: Cell
+    public let root: Cell
   fileprivate var distances: [Cell: Int] = [:]
 
   fileprivate(set) open var farthestCell: Cell
