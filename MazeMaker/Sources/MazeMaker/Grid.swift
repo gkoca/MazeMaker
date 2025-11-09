@@ -37,16 +37,16 @@ open class Grid {
 
   open func sample() -> Cell {
     precondition(cells.count > 0, "cannot sample an empty grid")
-    return cells.sample()!
+    return cells.randomElement()!
   }
 
   open func braid(_ p: Float = 0.5) {
-    let deadends = cells.filter { $0.isDeadEnd() }.shuffle()
+    let deadends = cells.filter { $0.isDeadEnd() }.shuffled()
     let count = Int(ceilf(Float(deadends.count) * p))
 
     for i in 0..<count {
       let cell = deadends[i]
-      let neighbor = cell.neighbors.filter { !cell.isLinkedWith($0) }.sample()
+      let neighbor = cell.neighbors.filter { !cell.isLinkedWith($0) }.randomElement()
 
       if let neighbor = neighbor {
         cell.linkWith(neighbor)

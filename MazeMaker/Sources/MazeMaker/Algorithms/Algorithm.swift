@@ -1,3 +1,3 @@
 public protocol Algorithm {
-  func applyTo(_ grid: Grid)
+    func applyTo(_ grid: Grid)
 }
