@@ -1,5 +1,5 @@
 import XCTest
-@testable import MazeKit
+@testable import MazeMaker
 
 class CellTests: XCTestCase {
 

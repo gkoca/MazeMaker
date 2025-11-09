@@ -1,4 +1,4 @@
-@testable import MazeKit
+@testable import MazeMaker
 
 class TestLocation: Location {
   fileprivate(set) var position: Int = 0
