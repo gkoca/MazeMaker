@@ -1,3 +1,4 @@
 *.xcuserstate
 /MazeMaker.xcodeproj/project.xcworkspace/xcuserdata
 /MazeMaker.xcodeproj/xcuserdata
+/MazeMakerSPM/MazeMaker/.swiftpm
