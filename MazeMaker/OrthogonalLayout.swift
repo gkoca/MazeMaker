@@ -1,8 +1,8 @@
 open class OrthogonalLayout: Layout {
-  open let rows: Int
-  open let columns: Int
-  open let wrapRows: Bool
-  open let wrapColumns: Bool
+  public let rows: Int
+  public let columns: Int
+  public let wrapRows: Bool
+  public let wrapColumns: Bool
 
   public init(rows: Int, columns: Int, wrapRows: Bool = false, wrapColumns: Bool = false) {
     self.rows = rows

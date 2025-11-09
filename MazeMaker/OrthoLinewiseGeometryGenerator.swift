@@ -4,7 +4,7 @@ open class OrthoLinewiseGeometryGenerator : GeometryGenerator {
   let scale: CGFloat
   let margin: CGFloat
 
-  open let bounds: CGRect
+  public let bounds: CGRect
 
   public required init(grid: Grid, scale: CGFloat, margin: CGFloat) {
     self.grid = grid

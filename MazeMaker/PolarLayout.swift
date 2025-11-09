@@ -1,7 +1,7 @@
 import Foundation
 
 open class PolarLayout: Layout {
-  open let rings: Int
+  public let rings: Int
   fileprivate var ringSizes: Array<Int> = []
 
   public init(rings: Int) {
@@ -12,7 +12,7 @@ open class PolarLayout: Layout {
     ringSizes.append(1)
     for ring in 1..<rings {
       let radius = Double(ring) / Double(rings)
-      let circumference = 2 * M_PI * radius
+      let circumference = 2 * Double.pi * radius
       let priorCount = ringSizes[ring-1]
       let estimatedCellWidth = circumference / Double(priorCount)
       let ratio = Int(round(estimatedCellWidth / ringHeight))

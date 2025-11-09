@@ -1,6 +1,6 @@
 open class PolarLocation: Location {
-  open let ring: Int
-  open let spoke: Int
+    public let ring: Int
+    public let spoke: Int
 
   open override var hashValue: Int {
     return ring * 1000 + spoke

@@ -62,7 +62,7 @@ open class PriorityQueue<U: Hashable> {
     }
   }
 
-  open func fromCollection<S: Collection where S.Iterator.Element == Pair>(_ collection: S) {
+  open func fromCollection<S: Collection>(_ collection: S) where S.Element == Pair {
     priorities.removeAll()
 
     for pair in collection {

@@ -4,7 +4,7 @@ open class PolarWallwiseGeometryGenerator : GeometryGenerator {
   let scale: CGFloat
   let margin: CGFloat
 
-  open let bounds: CGRect
+    public let bounds: CGRect
 
   public required init(grid: Grid, scale: CGFloat, margin: CGFloat) {
     self.grid = grid
@@ -30,7 +30,7 @@ open class PolarWallwiseGeometryGenerator : GeometryGenerator {
 
     for cell in grid.cells {
       if let cell = cell as? PolarCell {
-        let theta = CGFloat(2 * M_PI) / CGFloat(layout.ringSizeAt(cell.polarLocation.ring))
+        let theta = (2 * .pi) / CGFloat(layout.ringSizeAt(cell.polarLocation.ring))
         let innerRadius = CGFloat(cell.polarLocation.ring) * scale
         let outerRadius = CGFloat(cell.polarLocation.ring+1) * scale
         let thetaCCW = CGFloat(cell.polarLocation.spoke) * theta
@@ -43,12 +43,12 @@ open class PolarWallwiseGeometryGenerator : GeometryGenerator {
 
         if cell.outward.isEmpty {
           ctx.move(to: CGPoint(x: bx, y: by))
-            ctx.addArc(center: CGPoint(x: ox, y: oy), radius: outerRadius, startAngle: thetaCCW, endAngle: thetaCW, clockwise: false)
+          ctx.addArc(center: CGPoint(x: ox, y: oy), radius: outerRadius, startAngle: thetaCCW, endAngle: thetaCW, clockwise: false)
         }
 
         if !cell.isLinkedWith(cell.inward) {
           ctx.move(to: CGPoint(x: ax, y: ay))
-            ctx.addArc(center: CGPoint(x: ox, y: oy), radius: innerRadius, startAngle: thetaCCW, endAngle: thetaCW, clockwise: false)
+          ctx.addArc(center: CGPoint(x: ox, y: oy), radius: innerRadius, startAngle: thetaCCW, endAngle: thetaCW, clockwise: false)
         }
 
         if !cell.isLinkedWith(cell.ccw) && cell != cell.ccw {
@@ -57,7 +57,7 @@ open class PolarWallwiseGeometryGenerator : GeometryGenerator {
         }
       }
     }
-    
+
     ctx.strokePath()
   }
 }

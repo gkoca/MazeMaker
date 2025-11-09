@@ -1,6 +1,6 @@
 open class GridLocation: Location {
-  open let row: Int
-  open let column: Int
+    public let row: Int
+    public let column: Int
 
   open override var hashValue: Int {
     return row * 1000 + column
