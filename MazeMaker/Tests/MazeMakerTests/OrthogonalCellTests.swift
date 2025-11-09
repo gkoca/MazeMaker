@@ -1,48 +1,54 @@
-import XCTest
+import Testing
 @testable import MazeMaker
 
-class OrthogonalCellTests: XCTestCase {
+@Suite("OrthogonalCell Tests")
+struct OrthogonalCellTests {
     
+    @Test("North should be accessor")
     func testNorthShouldBeAccessor() {
         let cell = OrthogonalCell(location: GridLocation(row: 2, column: 1))
         let north = OrthogonalCell(location: cell.gridLocation.change(rowBy: -1))
         
-        XCTAssertNil(cell.north)
+        #expect(cell.north == nil)
         
         cell.north = north
-        XCTAssertEqual(cell.north, north)
+        #expect(cell.north == north)
     }
     
+    @Test("South should be accessor")
     func testSouthShouldBeAccessor() {
         let cell = OrthogonalCell(location: GridLocation(row: 2, column: 2))
         let south = OrthogonalCell(location: cell.gridLocation.change(rowBy: 1))
         
-        XCTAssertNil(cell.south)
+        #expect(cell.south == nil)
         
         cell.south = south
-        XCTAssertEqual(cell.south, south)
+        #expect(cell.south == south)
     }
     
+    @Test("East should be accessor")
     func testEastShouldBeAccessor() {
         let cell = OrthogonalCell(location: GridLocation(row: 2, column: 2))
         let east = OrthogonalCell(location: cell.gridLocation.change(columnBy: 1))
         
-        XCTAssertNil(cell.east)
+        #expect(cell.east == nil)
         
         cell.east = east
-        XCTAssertEqual(cell.east, east)
+        #expect(cell.east == east)
     }
     
+    @Test("West should be accessor")
     func testWestShouldBeAccessor() {
         let cell = OrthogonalCell(location: GridLocation(row: 2, column: 2))
         let west = OrthogonalCell(location: cell.gridLocation.change(columnBy: -1))
         
-        XCTAssertNil(cell.west)
+        #expect(cell.west == nil)
         
         cell.west = west
-        XCTAssertEqual(cell.west, west)
+        #expect(cell.west == west)
     }
     
+    @Test("Neighbors should include all non-nil neighbors")
     func testNeighborsShouldIncludeAllNonNilNeighbors() {
         let cell = OrthogonalCell(location: GridLocation(row: 2, column: 2))
         
@@ -51,21 +57,21 @@ class OrthogonalCellTests: XCTestCase {
         let west = OrthogonalCell(location: cell.gridLocation.change(columnBy: -1))
         let east = OrthogonalCell(location: cell.gridLocation.change(columnBy: 1))
         
-        XCTAssert(cell.neighbors.isEmpty)
+        #expect(cell.neighbors.isEmpty)
         
         cell.north = north
-        XCTAssert(cell.neighbors.contains(north))
-        XCTAssert(!cell.neighbors.contains(west))
+        #expect(cell.neighbors.contains(north))
+        #expect(!cell.neighbors.contains(west))
         
         cell.west = west
-        XCTAssert(cell.neighbors.contains(west))
+        #expect(cell.neighbors.contains(west))
         
         cell.south = south
         cell.east = east
         
-        XCTAssertEqual(cell.neighbors.count, 4)
-        XCTAssert(cell.neighbors.contains(south))
-        XCTAssert(cell.neighbors.contains(east))
+        #expect(cell.neighbors.count == 4)
+        #expect(cell.neighbors.contains(south))
+        #expect(cell.neighbors.contains(east))
     }
-    
 }
+

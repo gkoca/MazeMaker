@@ -1,9 +1,10 @@
-import XCTest
+import Testing
 @testable import MazeMaker
 
-class OrthogonalLayoutTests: XCTestCase {
+struct OrthogonalLayoutTests {
     
-    func testLayoutShouldPopulateGridOfCells() {
+    @Test("Layout should populate grid of cells with correct directional connections")
+    func layoutShouldPopulateGridOfCells() {
         let layout = OrthogonalLayout(rows: 3, columns: 3)
         let grid = Grid(layout: layout)
         
@@ -17,49 +18,49 @@ class OrthogonalLayoutTests: XCTestCase {
         let h = grid.at(GridLocation(row: 2, column: 1)) as! OrthogonalCell
         let i = grid.at(GridLocation(row: 2, column: 2)) as! OrthogonalCell
         
-        XCTAssertNil(a.north)
-        XCTAssertNil(a.west)
-        XCTAssertEqual(a.east, b)
-        XCTAssertEqual(a.south, d)
+        #expect(a.north == nil)
+        #expect(a.west == nil)
+        #expect(a.east == b)
+        #expect(a.south == d)
         
-        XCTAssertNil(b.north)
-        XCTAssertEqual(b.west, a)
-        XCTAssertEqual(b.east, c)
-        XCTAssertEqual(b.south, e)
+        #expect(b.north == nil)
+        #expect(b.west == a)
+        #expect(b.east == c)
+        #expect(b.south == e)
         
-        XCTAssertNil(c.north)
-        XCTAssertNil(c.east)
-        XCTAssertEqual(c.west, b)
-        XCTAssertEqual(c.south, f)
+        #expect(c.north == nil)
+        #expect(c.east == nil)
+        #expect(c.west == b)
+        #expect(c.south == f)
         
-        XCTAssertNil(d.west)
-        XCTAssertEqual(d.north, a)
-        XCTAssertEqual(d.east, e)
-        XCTAssertEqual(d.south, g)
+        #expect(d.west == nil)
+        #expect(d.north == a)
+        #expect(d.east == e)
+        #expect(d.south == g)
         
-        XCTAssertEqual(e.north, b)
-        XCTAssertEqual(e.west, d)
-        XCTAssertEqual(e.east, f)
-        XCTAssertEqual(e.south, h)
+        #expect(e.north == b)
+        #expect(e.west == d)
+        #expect(e.east == f)
+        #expect(e.south == h)
         
-        XCTAssertNil(f.east)
-        XCTAssertEqual(f.north, c)
-        XCTAssertEqual(f.west, e)
-        XCTAssertEqual(f.south, i)
+        #expect(f.east == nil)
+        #expect(f.north == c)
+        #expect(f.west == e)
+        #expect(f.south == i)
         
-        XCTAssertNil(g.west)
-        XCTAssertNil(g.south)
-        XCTAssertEqual(g.north, d)
-        XCTAssertEqual(g.east, h)
+        #expect(g.west == nil)
+        #expect(g.south == nil)
+        #expect(g.north == d)
+        #expect(g.east == h)
         
-        XCTAssertNil(h.south)
-        XCTAssertEqual(h.north, e)
-        XCTAssertEqual(h.west, g)
-        XCTAssertEqual(h.east, i)
+        #expect(h.south == nil)
+        #expect(h.north == e)
+        #expect(h.west == g)
+        #expect(h.east == i)
         
-        XCTAssertNil(i.east)
-        XCTAssertNil(i.south)
-        XCTAssertEqual(i.north, f)
-        XCTAssertEqual(i.west, h)
+        #expect(i.east == nil)
+        #expect(i.south == nil)
+        #expect(i.north == f)
+        #expect(i.west == h)
     }
 }

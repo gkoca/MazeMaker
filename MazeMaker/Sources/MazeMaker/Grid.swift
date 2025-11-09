@@ -11,12 +11,14 @@ open class Grid {
         layout.build(self)
     }
     
+    @discardableResult
     open func add(_ cell: Cell) -> Self {
         cells.insert(cell)
         slots[cell.location] = cell
         return self
     }
     
+    @discardableResult
     open func remove(_ cell: Cell) -> Self {
         cells.remove(cell)
         slots.removeValue(forKey: cell.location)
@@ -27,6 +29,7 @@ open class Grid {
         return slots[location]
     }
     
+    @discardableResult
     open func reset() -> Self {
         for cell in cells {
             cell.reset()
